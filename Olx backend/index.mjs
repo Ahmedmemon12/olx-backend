@@ -11,6 +11,10 @@ app.listen(PORT, function () {
     console.log('http://localhost:' + PORT);
 })
 
+app.use('/', (req, res)=>{
+    res.send({message: 'For Products type /products and for Users type /users after url'})
+})
+
 app.use(express.json())
 
 app.use('/', routes)

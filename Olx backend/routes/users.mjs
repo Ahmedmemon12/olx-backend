@@ -56,4 +56,4 @@ router.put('/logout', verifyToken, async (req, res) => {
     res.send({ message: 'Logged out successfully!' })
 })
 
-export default router 
+export default router
